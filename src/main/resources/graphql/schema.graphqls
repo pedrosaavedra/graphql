@@ -1,0 +1,17 @@
+# scalar Long
+type Query {
+    users: [User]
+    getUserById(id: ID!) : User
+}
+
+
+type User {
+    id: ID
+    name: String
+    permissitions: [Permission]
+}
+
+type Permission {
+    name: String
+    rank: Int
+}
